@@ -14,70 +14,78 @@
   <body>
     <h1 class="form-head">Interactive Form</h1>
     <form action="">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your name"
-        />
-      </div>
+      <div class="form">
+        <div class="form-group">
+          <label for="name" class="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your Email"
-        />
-      </div>
+        <div class="form-group">
+          <label for="email" class="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="tel">Phone no</label>
-        <select>
-          <option>+91</option>
-          <option>+44</option>
-          <option>+21</option>
-          <option>+41</option>
-          <option>+244</option>
-          <option>+672</option>
-          <option>+54</option>
-          <option>+994</option>
-          <option>+880</option>
-          <option>+61</option>
-          <option>+12</option>
-          <option>+55</option>
-        </select>
-        <input
-          type="tel"
-          id="number"
-          name="phone"
-          placeholder="Enter your phone no."
-        />
-      </div>
+        <div class="form-group">
+          <label for="tel" class="tel">Phone no</label>
+          <select>
+            <option>+91</option>
+            <option>+44</option>
+            <option>+21</option>
+            <option>+41</option>
+            <option>+244</option>
+            <option>+672</option>
+            <option>+54</option>
+            <option>+994</option>
+            <option>+880</option>
+            <option>+61</option>
+            <option>+12</option>
+            <option>+55</option>
+          </select>
+          <input
+            type="tel"
+            id="number"
+            name="phone"
+            placeholder="Enter your phone no."
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Enter your Password"
-          required
-        />
-      </div>
+        <div class="form-group">
+          <label for="password" class="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your Password"
+            required
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="password">Confirm Password</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Confirm Password"
-          required
-        />
+        <div class="form-group">
+          <label for="password" class="confirm-password"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+
+        <div class="submit">
+          <button type="submit">Submit</button>
+        </div>
       </div>
     </form>
   </body>
