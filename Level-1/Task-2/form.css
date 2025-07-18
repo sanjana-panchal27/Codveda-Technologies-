@@ -30,7 +30,7 @@ body {
 
 .form-group {
   padding: 10px;
-  border: 1px solid #a9a9a9;
+  border: 1px solid #ccc;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -70,6 +70,32 @@ select {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+/* strength password */
+/* Strength indicator */
+.strength-message {
+  font-size: 14px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.weak {
+  color: red;
+}
+.medium {
+  color: orange;
+}
+.strong {
+  color: green;
+}
+
+/* Align error below input */
+.error {
+  font-size: 14px;
+  color: red;
+  margin-top: 5px;
+  display: block;
 }
 
 .submit {
