@@ -1,10 +1,36 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Hero from './components/Hero';
+import Features from './components/Features';
+import Testimonial from './components/Testimonial';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <>
-      <h1 className='bg-amber-400 text-4xl'>Hello World</h1>
-    </>
+    <Router>
+      <AppProvider>
+        <Navbar />
+
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Features />
+                <Testimonial />
+                <ContactForm />
+              </>
+            }
+          />
+        </Routes>
+
+        <Footer />
+      </AppProvider>
+    </Router>
   );
 }
 
